@@ -8,7 +8,7 @@ import mak.service.nonreactive.ShipmentService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("inventory")
+@RequestMapping("shipping")
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class ShipmentController {

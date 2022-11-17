@@ -10,7 +10,7 @@ import java.util.List;
 @Data
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Builder(setterPrefix = "set")
-@Entity
+@Table(name = "orders")
 @AllArgsConstructor
 public class Order {
 
