@@ -1,9 +1,6 @@
 package mak.pojo;
 
-import lombok.AccessLevel;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import javax.persistence.Entity;
@@ -17,7 +14,10 @@ import java.util.List;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Builder(setterPrefix = "set")
 @Entity
+@AllArgsConstructor
 public class Shipment {
+
+    public Shipment(){}
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     Integer shipmentId;

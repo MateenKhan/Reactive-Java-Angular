@@ -4,27 +4,19 @@ import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import mak.pojo.Order;
-import mak.pojo.Product;
 import mak.service.nonreactive.InventoryService;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 @RestController
-@RequestMapping("product")
+@RequestMapping("inventory")
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class ProductController {
+public class InventoryController {
 
     InventoryService inventoryService;
 
-    @GetMapping
-    public List<Product> getAllProducts() {
-        return inventoryService.getProducts();
-    }
-
     @PostMapping
-    public Order processOrder(@RequestBody Order order) {
+    public Order handleOrder(@RequestBody Order order) {
         return inventoryService.handleOrder(order);
     }
 
