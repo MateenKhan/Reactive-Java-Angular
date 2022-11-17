@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "e6766ab6-af16-4790-8706-28fc96249f15",
+		"name": "Reactive-java",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3110536"
+	},
+	"item": [
+		{
+			"name": "test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Producer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"topic\":\"test-topic\",\r\n    \"message\":\"test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/produce",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"produce"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
