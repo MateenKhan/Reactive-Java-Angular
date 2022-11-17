@@ -27,7 +27,7 @@ public class OrderService {
     @Value("${inventory.service.url}")
     String inventoryServiceUrl;
 
-    @Value("${inventory.service.url}")
+    @Value("${shipping.service.url}")
     String shippingServiceUrl;
 
     public Order createOrder(Order order) {

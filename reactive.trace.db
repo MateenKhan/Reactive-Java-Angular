@@ -1,0 +1,6 @@
+2022-11-17 08:31:34 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'' (PRODUCT: ""PRODUCT_ID"" INTEGER NOT NULL)"; SQL statement:
+INSERT INTO "PUBLIC"."PRODUCT"("PRODUCT_ID","PRODUCT_NAME","QUANTITY","STOCK")VALUES(?,?,?,?) [22018-214]
+2022-11-17 08:31:34 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'' (PRODUCT: ""PRODUCT_ID"" INTEGER NOT NULL)"; SQL statement:
+INSERT INTO "PUBLIC"."PRODUCT"("PRODUCT_ID","PRODUCT_NAME","QUANTITY","STOCK")VALUES(?,?,?,?) [22018-214]
